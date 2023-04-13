@@ -1,0 +1,161 @@
+body{
+    margin: 0px;
+    padding: 0px;
+}
+
+.container{
+border: 0px solid red;
+height: auto;
+display: flex;
+justify-content: space-around;
+width: 100%;
+
+}
+.box1{
+    border: 0px solid orange;
+    height: 300px;
+    background-color: aquamarine;
+    width: auto;
+}
+.subbox1{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    border: 0px solid green;
+    height: 200px;
+    
+}
+.subbox2{
+    display: flex;
+}
+
+.box2{
+    border: 0px solid yellow;
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    gap: 120px;
+    background-color: pink;
+    width:auto ;
+}
+
+.subbox2{
+    display: flex;
+    gap: 20px;
+    justify-content: space-between;
+    border: 0px solid rebeccapurple;
+    
+
+}
+
+.minibox2--1{
+    display: flex;
+    border: 0px solid yellow;
+}
+
+.minibox2--1{
+    display: flex;
+    justify-content: space-around;
+}
+
+.minibox2--2{
+    border: 0px solid blue;
+    display: flex;
+    justify-content: space-around;
+}
+.minibox2--2 img{
+
+    width: 10%;
+}
+
+.minibox2--1 img{
+    width: 10%;
+}
+
+.subbox3{
+    display: flex;
+    gap: 20px;
+    justify-content: space-around;
+    border: 0px solid firebrick;
+    /* width: 1000px;
+    height: 200px; */
+}
+
+.box3{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    
+    border: 0px solid gray;
+height: 300px;
+width: auto;
+background-color: gray;
+}
+
+.box3 button{
+    width: 100%;
+}
+.box3 img{
+    border-radius: 100%;
+    width: 100%;
+    height: 200px;
+    
+}
+
+
+@media only screen and (max-width:767px) {
+    .container{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .subbox2{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .subbox3{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .box2{
+        justify-content: space-evenly;
+        gap: 0px;
+        height: 350px;
+    }
+
+    .box3{
+        flex-direction: column-reverse;
+    }
+
+    button{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: auto;
+        width: 70%;
+    }
+
+    .box3 button{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: auto;
+        width: 70%;
+    }
+    .box3 img{
+        display: flex;
+        justify-content: center;
+        margin: auto;
+        width: 50%;
+    }
+}
+
+button{
+    border-radius: 15px;
+    height: 35px;
+    border: transparent;
+    
+}
+
